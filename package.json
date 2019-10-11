@@ -17,6 +17,7 @@
     "@babel/core": "^7.6.4",
     "@storybook/addon-actions": "^5.2.3",
     "@storybook/addon-links": "^5.2.3",
+    "@storybook/addon-storysource": "^5.2.3",
     "@storybook/addons": "^5.2.3",
     "@storybook/vue": "^5.2.3",
     "@vue/cli-plugin-babel": "^3.1.1",
