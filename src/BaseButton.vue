@@ -1,11 +1,17 @@
 <template>
-  <button>
+  <button @click="onClick">
     <slot></slot>
   </button>
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    onClick() {
+      this.$emit("click");
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>
