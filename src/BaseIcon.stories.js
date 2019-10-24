@@ -1,7 +1,14 @@
 import BaseIcon from "./BaseIcon.vue";
 import { icons } from "./shared/icons";
 
-export default { title: "Icon" };
+export default {
+  title: "Design System|Icon",
+
+  parameters: {
+    component: BaseIcon,
+    componentSubtitle: "Displays an icon that represents a svg"
+  }
+};
 
 export const defaultIcon = () => ({
   components: { BaseIcon },
