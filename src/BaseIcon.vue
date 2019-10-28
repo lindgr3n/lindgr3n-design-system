@@ -4,8 +4,6 @@
     width="20px"
     height="20px"
     :class="{ block: block }"
-    :aria-hidden="ariaHidden"
-    :aria-label="ariaLabel"
   >
     <path :d="icons[icon]" />
   </svg>
@@ -22,24 +20,14 @@ import { icons } from "./shared/icons";
  */
 export default {
   props: {
-    /**
-     * Props yey
-     */
     icon: {
       type: String,
+      required: true,
       description: "Test"
     },
     block: {
       type: Boolean,
       default: false
-    },
-    ariaHidden: {
-      type: Boolean,
-      default: false
-    },
-    ariaLabel: {
-      type: String,
-      default: null
     }
   },
   data() {
