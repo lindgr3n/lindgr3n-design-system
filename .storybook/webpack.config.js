@@ -13,18 +13,18 @@ module.exports = function ({ config }) {
         include: path.resolve(__dirname, '../'),
     });
 
-    // Untill https://github.com/storybookjs/storybook/issues/8013 is fixed
-    config.module.rules.push({
-        resourceQuery: /blockType=custom/,
-        loader: require.resolve('./ignore-loader.js')
-    })
+    // // Untill https://github.com/storybookjs/storybook/issues/8013 is fixed
+    // config.module.rules.push({
+    //     resourceQuery: /blockType=custom/,
+    //     loader: require.resolve('./ignore-loader.js')
+    // })
 
-    config.module.rules.push({
-        test: /\.vue$/,
-        loaders: [require.resolve('storybook-addon-vue-info/loader')],
-        // loader: 'storybook-addon-vue-info/loader',
-        enforce: 'post'
-    })
+    // config.module.rules.push({
+    //     test: /\.vue$/,
+    //     loaders: [require.resolve('storybook-addon-vue-info/loader')],
+    //     // loader: 'storybook-addon-vue-info/loader',
+    //     enforce: 'post'
+    // })
 
 
     return config;
