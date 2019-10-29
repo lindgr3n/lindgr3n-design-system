@@ -1,6 +1,6 @@
 <template>
-  <component :is="type" :href="href" class="base">
-    <span :class="classObj" :aria-label="ariaLabel" :aria-hidden="ariaHidden">
+  <component :is="type" class="base">
+    <span :class="classObj">
       <slot></slot>
       <base-icon v-if="withArrow" icon="arrowright" />
     </span>
@@ -9,15 +9,14 @@
 
 <script>
 import BaseIcon from "./BaseIcon.vue";
+/**
+ * Links can contains text and/or icons. Be careful using only icons, you must provide a text alternative via aria-label for accessibility.
+ */
 export default {
   components: {
     BaseIcon
   },
   props: {
-    href: {
-      type: String,
-      default: ""
-    },
     isButton: {
       type: Boolean,
       default: false
@@ -39,14 +38,6 @@ export default {
       default: false
     },
     nochrome: {
-      type: Boolean,
-      default: false
-    },
-    ariaLabel: {
-      type: String,
-      default: null
-    },
-    ariaHidden: {
       type: Boolean,
       default: false
     },

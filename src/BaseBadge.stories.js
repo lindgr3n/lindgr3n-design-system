@@ -1,7 +1,10 @@
 import BaseBadge from "./BaseBadge.vue";
 import BaseIcon from "./BaseIcon.vue";
 
-export default { title: "Badge" };
+export default {
+  title: "Design System|Badge",
+  component: BaseBadge
+};
 
 export const neutral = () => ({
   components: { BaseBadge },

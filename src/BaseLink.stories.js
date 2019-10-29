@@ -1,7 +1,13 @@
 import BaseLink from "./BaseLink.vue";
 import BaseIcon from "./BaseIcon.vue";
 
-export default { title: "Link" };
+export default {
+  title: "Design System|Link",
+
+  parameters: {
+    component: BaseLink
+  }
+};
 
 export const withText = () => ({
   components: { BaseLink },

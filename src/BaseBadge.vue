@@ -5,6 +5,9 @@
 </template>
 
 <script>
+/**
+ * Basic badges
+ */
 export default {
   props: {
     status: {
