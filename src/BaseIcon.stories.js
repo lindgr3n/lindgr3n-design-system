@@ -1,12 +1,12 @@
-import BaseIcon from "./BaseIcon.vue";
-import { icons } from "./shared/icons";
+import BaseIcon from './BaseIcon.vue';
+import { icons } from './shared/icons';
 
 export default {
-  title: "Design System|Icon",
+  title: 'Design System|Icon',
 
   parameters: {
     component: BaseIcon,
-    componentSubtitle: "Displays an icon that represents a svg"
+    componentSubtitle: 'Displays an icon that represents a svg'
   }
 };
 
@@ -23,23 +23,23 @@ export const blockIcon = () => ({
 });
 
 const listStyle = {
-  display: "flex",
-  "flex-flow": "row wrap",
-  "list-style": "none",
-  "padding-top": "1em"
+  display: 'flex',
+  'flex-flow': 'row wrap',
+  'list-style': 'none',
+  'padding-top': '1em'
 };
 const listItemStyle = {
-  display: "inline-flex",
-  "flex-direction": "row",
-  "align-items": "center",
-  flex: "0 1 20%",
-  "min-width": "120px",
-  padding: "0px 7.5px 20px"
+  display: 'inline-flex',
+  'flex-direction': 'row',
+  'align-items': 'center',
+  flex: '0 1 20%',
+  'min-width': '120px',
+  padding: '0px 7.5px 20px'
 };
 const listIcon = {
-  "margin-right": "10px",
-  width: "24px",
-  height: "24px"
+  'margin-right': '10px',
+  width: '24px',
+  height: '24px'
 };
 
 export const labels = () => ({
@@ -65,18 +65,18 @@ export const labels = () => ({
 });
 
 const minimalItem = {
-  flex: "none",
-  "min-width": "auto",
-  padding: "0",
-  background: "#fff",
-  border: "1px solid #666"
+  flex: 'none',
+  'min-width': 'auto',
+  padding: '0',
+  background: '#fff',
+  border: '1px solid #666'
 };
 
 const minimalIcon = {
-  display: "block",
-  "margin-right": "0",
-  width: "48px",
-  height: "48px"
+  display: 'block',
+  'margin-right': '0',
+  width: '48px',
+  height: '48px'
 };
 
 export const noLabels = () => ({

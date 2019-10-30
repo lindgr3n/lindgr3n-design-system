@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import BaseIcon from "./BaseIcon.vue";
+import BaseIcon from './BaseIcon.vue';
 /**
  * Links can contains text and/or icons. Be careful using only icons, you must provide a text alternative via aria-label for accessibility.
  */
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     type() {
-      return this.isButton ? "button" : "a";
+      return this.isButton ? 'button' : 'a';
     },
     classObj() {
       return {
@@ -57,7 +57,7 @@ export default {
         secondary: this.secondary,
         tertiary: this.tertiary,
         nochrome: this.nochrome,
-        "contains-icon": this.containsIcon
+        'contains-icon': this.containsIcon
       };
     }
   }

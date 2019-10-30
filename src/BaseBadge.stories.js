@@ -1,14 +1,14 @@
-import BaseBadge from "./BaseBadge.vue";
-import BaseIcon from "./BaseIcon.vue";
+import BaseBadge from './BaseBadge.vue';
+import BaseIcon from './BaseIcon.vue';
 
 export default {
-  title: "Design System|Badge",
+  title: 'Design System|Badge',
   component: BaseBadge
 };
 
 export const neutral = () => ({
   components: { BaseBadge },
-  template: "<base-badge>neutral</base-badge>"
+  template: '<base-badge>neutral</base-badge>'
 });
 export const withIcon = () => ({
   components: { BaseBadge, BaseIcon },

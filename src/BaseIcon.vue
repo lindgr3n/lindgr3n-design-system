@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { icons } from "./shared/icons";
+import { icons } from './shared/icons';
 /**
  * An Icon is a piece of visual element, but we must ensure its accessibility while using it.
  * It can have 2 purposes:
@@ -23,7 +23,7 @@ export default {
     icon: {
       type: String,
       required: true,
-      description: "Test"
+      description: 'Test'
     },
     block: {
       type: Boolean,

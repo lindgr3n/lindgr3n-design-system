@@ -1,8 +1,8 @@
-import BaseLink from "./BaseLink.vue";
-import BaseIcon from "./BaseIcon.vue";
+import BaseLink from './BaseLink.vue';
+import BaseIcon from './BaseIcon.vue';
 
 export default {
-  title: "Design System|Link",
+  title: 'Design System|Link',
 
   parameters: {
     component: BaseLink
@@ -11,7 +11,7 @@ export default {
 
 export const withText = () => ({
   components: { BaseLink },
-  template: "<base-link>with text</base-link>"
+  template: '<base-link>with text</base-link>'
 });
 export const isButton = () => ({
   components: { BaseLink },
