@@ -10,9 +10,20 @@
  */
 export default {
   props: {
+    /**
+     * One of "positive", "negative", "neutral", "error", "warning"
+     */
     status: {
       type: String,
-      default: "neutral"
+      default: 'neutral',
+      validator: function(value) {
+        // The value must match one of these strings
+        return (
+          ['positive', 'negative', 'neutral', 'error', 'warning'].indexOf(
+            value
+          ) !== -1
+        );
+      }
     }
   },
   computed: {
