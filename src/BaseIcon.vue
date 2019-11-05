@@ -38,13 +38,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 svg {
   display: inline-block;
   vertical-align: middle;
   shape-rendering: inherit;
   transform: translate3d(0, 0, 0);
 }
+
 svg.block {
   display: block;
 }

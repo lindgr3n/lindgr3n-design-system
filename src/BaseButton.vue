@@ -5,10 +5,13 @@
 </template>
 
 <script>
+/**
+ * Base button
+ */
 export default {
   methods: {
     onClick() {
-      this.$emit("click");
+      this.$emit('click');
     }
   }
 };
