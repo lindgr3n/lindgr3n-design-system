@@ -1,8 +1,10 @@
 {
-  "name": "lindgr3n-ds",
+  "name": "@lindgr3n/lindgr3n-ds",
   "version": "0.1.0",
   "private": true,
   "main": "dist/myLib.common.js",
+  "license": "MIT",
+  "repository": "https://github.com/lindgr3n/lindgr3n-design-system",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:vue": "vue-cli-service build",
