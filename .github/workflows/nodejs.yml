@@ -27,6 +27,7 @@ jobs:
     - name: install, build, and test
       run: |
         yarn
+        yarn build
         yarn build-storybook
         yarn test
         yarn chromatic test --app-code=${{ secrets.CHROMATIC_APP_CODE }} --exit-zero-on-changes
