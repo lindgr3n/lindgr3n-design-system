@@ -18,7 +18,8 @@
     "lint": "vue-cli-service lint",
     "build-storybook": "build-storybook",
     "storybook": "start-storybook -p 6006",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "release": "auto shipit"
   },
   "dependencies": {
     "core-js": "^2.6.5",
