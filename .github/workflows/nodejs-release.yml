@@ -26,6 +26,7 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         CI: true
       run: |
+        git remote -v
         yarn
         yarn build
         yarn build-storybook
