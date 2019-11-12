@@ -24,7 +24,7 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git checkout "${GITHUB_REF}"
+        git checkout "${GITHUB_REF:11}"
         git remote rm origin
         git remote add origin "https://$GH_TOKEN@github.com/lindgr3n/lindgr3n-design-system.git"
         git fetch origin
