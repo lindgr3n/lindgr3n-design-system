@@ -21,6 +21,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: install, build, and test
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        CI: true
       run: |
         yarn
         yarn build
@@ -28,7 +32,3 @@ jobs:
         yarn test
         yarn chromatic test --app-code=${{ secrets.CHROMATIC_APP_CODE }} --exit-zero-on-changes
         yarn release
-      env:
-        CI: true
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
