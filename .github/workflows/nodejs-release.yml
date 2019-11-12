@@ -20,13 +20,20 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - name: Prepare repository
+      env:
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: |
+        git remote rm origin
+        git remote add origin "https://$GH_TOKEN@github.com/lindgr3n/lindgr3n-design-system.git"
+        git fetch origin
+        git branch --set-upstream-to origin/master
     - name: install, build, and test
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         CI: true
       run: |
-        git remote -v
         yarn
         yarn build
         yarn build-storybook
