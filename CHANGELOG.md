@@ -1,3 +1,16 @@
+# v0.4.13 (Wed Nov 13 2019)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:lindgr3n/lindgr3n-design-system  (johan@lindgr3n.com)
+- Work work  (johan@lindgr3n.com)
+
+#### Authors: 1
+
+- Johan Lindgren (johan@lindgr3n.com)
+
+---
+
 # v0.4.12 (Tue Nov 12 2019)
 
 #### ⚠️  Pushed to master
