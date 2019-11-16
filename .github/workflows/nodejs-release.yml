@@ -1,6 +1,9 @@
 name: Node CI - Release
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -34,11 +37,14 @@ jobs:
         COMMIT_FILTER: skip ci
     - name: Prepare repository
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        git checkout "${GITHUB_REF:11}"
+        # git checkout "${GITHUB_REF:11}"
+        git checkout master
         git remote rm origin
-        git remote add origin "https://$GITHUB_TOKEN@github.com/lindgr3n/lindgr3n-design-system.git"
+        # git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git remote add origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        # git remote add origin "https://$GH_TOKEN@github.com/lindgr3n/lindgr3n-design-system.git"
         git fetch origin
         git branch --set-upstream-to origin/master
     - name: Use Node.js 10.x
