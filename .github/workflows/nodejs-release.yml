@@ -47,7 +47,7 @@ jobs:
         node-version: 10.x
     - name: Create Release
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         git remote -v
@@ -55,5 +55,5 @@ jobs:
         yarn build
         yarn build-storybook
         yarn test
-        yarn chromatic test --app-code=${{ secrets.CHROMATIC_APP_CODE }} --exit-zero-on-changes
+        # yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
         yarn release
