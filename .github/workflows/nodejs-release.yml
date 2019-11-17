@@ -54,9 +54,9 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         git remote -v
-        yarn
-        yarn build
-        yarn build-storybook
-        yarn test
-        yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
-        yarn release
+        npm install
+        npm run build
+        npm run build-storybook
+        npm run test
+        npm run chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
+        npm run release
