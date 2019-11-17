@@ -1,3 +1,21 @@
+# v0.4.17 (Sun Nov 17 2019)
+
+#### 🐛  Bug Fix
+
+- Chroma replacement to Chromatic [#8](https://github.com/lindgr3n/lindgr3n-design-system/pull/8) ([@lindgr3n](https://github.com/lindgr3n))
+
+#### ⚠️  Pushed to master
+
+- build it  ([@lindgr3n](https://github.com/lindgr3n))
+- SHould use npm...  ([@lindgr3n](https://github.com/lindgr3n))
+- update action  ([@lindgr3n](https://github.com/lindgr3n))
+
+#### Authors: 1
+
+- Johan Lindgren ([@lindgr3n](https://github.com/lindgr3n))
+
+---
+
 # v0.4.14 (Sat Nov 16 2019)
 
 #### ⚠️  Pushed to master
