@@ -54,7 +54,7 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         git remote -v
-        npm install
+        npm ci
         npm run build
         npm run build-storybook
         npm run test
