@@ -6,26 +6,26 @@ on:
     - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  #build:
+  #  runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [10.x]
+  #  strategy:
+  #    matrix:
+  #      node-version: [10.x]
 
-    steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: install, build, and test
-      run: |
-        yarn
-        yarn build
-        yarn build-storybook
-        yarn test
-        yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
+  #  steps:
+  #  - uses: actions/checkout@v1
+  #  - name: Use Node.js ${{ matrix.node-version }}
+  #    uses: actions/setup-node@v1
+  #    with:
+  #      node-version: ${{ matrix.node-version }}
+  #  - name: install, build, and test
+  #    run: |
+  #      yarn
+  #      yarn build
+  #      yarn build-storybook
+  #      yarn test
+  #      yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
   release:
     runs-on: ubuntu-latest
 
@@ -54,9 +54,9 @@ jobs:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         git remote -v
-        #yarn
-        #yarn build
-        #yarn build-storybook
-        #yarn test
-        #yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
+        yarn
+        yarn build
+        yarn build-storybook
+        yarn test
+        yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
         yarn release
