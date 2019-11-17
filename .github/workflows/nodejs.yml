@@ -25,6 +25,6 @@ jobs:
         yarn build
         yarn build-storybook
         yarn test
-        yarn chromatic test --app-code=${{ secrets.CHROMATIC_APP_CODE }} --exit-zero-on-changes
+        yarn chroma test --app-code=${{ secrets.CHROMA_APP_CODE }} --exit-zero-on-changes
       env:
         CI: true
