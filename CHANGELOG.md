@@ -1,3 +1,16 @@
+# v0.4.18 (Sat Dec 21 2019)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of github.com:lindgr3n/lindgr3n-design-system  (johan@lindgr3n.com)
+- wip avatar  (johan@lindgr3n.com)
+
+#### Authors: 1
+
+- Johan Lindgren (johan@lindgr3n.com)
+
+---
+
 # v0.4.17 (Sun Nov 17 2019)
 
 #### 🐛  Bug Fix
